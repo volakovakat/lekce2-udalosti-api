@@ -8,18 +8,24 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div onmouseover="priNajeti()">
+		<p>
+			V elipse spí lev.
+		</p>
+	</div>
+		
+	<button onclick="cervenyPoKliknuti()">červený po kliknutí</button>
+	<button onclick="vetsiPoKliknuti()">větší po kliknutí</button>
 
-	<h1>Změna tříd, události</h1>
+	<button onclick="prehrat()">Přehrát</button>
+	<button onclick="hlasitost(0)">Ztlumit</button>
+	<button onclick="hlasitost(0.5)">Zlatý střed</button>
+	<button onclick="hlasitost(1)">Na plný pecky</button>
+	<button onclick="odZacatku()">Od začátku</button>
+	
 
-	<div class="ctverecek zluty"></div>
+	<audio id="zvuk" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
-	<div class="ctverecek zeleny"></div>
-
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
-
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
-
+	<script src="main.js"></script>
 </body>
 </html>
